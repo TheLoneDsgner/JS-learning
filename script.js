@@ -1,8 +1,9 @@
-/*console.log('TheLoneDsgner')
+/* console.log('TheLoneDsgner')
 
 // alert("Lone Dsgner says Hello world!")
 
 // Three data types 
+
 // Text data - String
 // Number data - number
 // Bullean data - bullean
@@ -21,12 +22,12 @@ const amount = 400
 console.log(street)
 console.log(fuck)
 console.log(amount)
-*/
+
 
 // Arithemetic operations
 
 // subtractionb & addition
-/*
+
 let outcome = 200 - 120
 console.log(outcome)
 
@@ -51,39 +52,39 @@ console.log(modules)
 // Raise to power
 const raiseToPower = 2 ** 4
 console.log(raiseToPower)
-*/ 
 
 
 
-/*const ricePrice = 4000
+
+const ricePrice = 4000
 const beansPrice = 4200
 
 const totalPrice = ricePrice + beansPrice
 
-console.log(totalPrice)*/
+console.log(totalPrice)
 
-//console.log(ricePrice + beansPrice)
+console.log(ricePrice + beansPrice)
 
-/*const acountBalance = 50000
+const acountBalance = 50000
 const witdrawaAmount = 25000
 
 const currentBalance = acountBalance - witdrawaAmount
 
-console.log(currentBalance)*/
+console.log(currentBalance)
 
 // (2+3) * 4 - 4 / 2
 
-// Working with numbers
-// let result = 10 + 10
-// console.log(result);
+//Working with numbers
+let result = 10 + 10
+console.log(result);
 
-// let yamPrice = 2000
-// let waterPrice = 3000
-// let ricePrice = 30000
+let yamPrice = 2000
+let waterPrice = 3000
+let ricePrice = 30000
 
-// let outCome = yamPrice + waterPrice + ricePrice
+let outCome = yamPrice + waterPrice + ricePrice
 
-// console.log(outCome)
+console.log(outCome) */
 
 // Varialbe re-asssignment - giving a variable another value
 
@@ -565,7 +566,7 @@ let response = transactionHistory.includes("latestTransaction")
 
 console.log(response)
 
-//Slice - cut a part of the array and use it elsewhere - slice the array does not change
+//Slice - cut a part of the array and use it elsewhere - in slice the array does not change
 
 //let newTransactionList = transactionHistory.splice(1,3)
 //console.log(newTransactionList)
@@ -644,7 +645,7 @@ console.log(returnAvaerage)
 
 
 
-// Function parameters - this allow you to provide external data to a function, basically, they pipeline use to pipe in data
+// Function parameters - this allow you to provide external data to a function, basically, the pipeline use to pipe in data
 
 function verifyUserID(nationalID){   //the data in the bracket before curl bracket is called function parameters - you can have more than one parameters in the bracket
 
@@ -711,6 +712,7 @@ console.log(sayMyName)
 
 //Function - a lesson from the guest Abbass
 
+/*
 function sayHappyBirthday(userName = "Bukmus"){  //default parameter, this is use to replace empty data - like a placeholder
     console.log(`Happy Birthday ${userName}`);
 }
@@ -739,4 +741,186 @@ function addNumber(num1, num2){
 
 let total = addNumber(200, 30);
 console.log(total);
+*/
 
+
+
+
+
+//new year
+//method - method is the function that is inside an object literal
+
+const studentScore = {
+    studentName : "James",
+    studentID : "FHGH8799H",
+    studentFirstScore : 100,
+    studentSecondScore: 88,
+    studentThirdScore : 76,
+    averageScore : function(){ //method
+        let averageScore = (this.studentFirstScore + this.studentSeconScore + this.student>ThirdScore) / 3
+
+        return averageScore
+    }
+}
+
+//how to work with Strings
+
+let myString = "Strings in JavaScript"
+
+
+//convert to uppercase
+console.log(myString.toUpperCase());
+
+//convert to lowercase
+let myEmail = "JAMES.DESIGNER19@GMAIL.COM"
+
+console.log(myEmail.toLowerCase());
+
+//trim extra space at the beggining
+let myName = "      David"
+console.log(myName.trimStart())
+
+//remove extra space at the end
+let myLastName = "James     "
+console.log(myLastName.trimEnd())
+
+//remove extra space in both side
+let myFridge = "   Hisense   "
+console.log(myFridge.trim())
+
+//how to replace word
+let fullName = "James David"
+console.log(fullName.replace('David', "Oluwabukunmi"))
+
+//slice
+let myFanTagName = "Air Freshness"
+let textSlice = myFanTagName.slice(2, 5)
+console.log(textSlice)
+
+//include method
+let myNames = "James"
+let result = myNames.includes("es")
+console.log(result)
+
+//start with
+let myDraw = "James"
+let answer = myDraw.startsWith("J")
+console.log(answer)
+
+//end with
+let betSlip = "MosesHG"
+let betSlipResult = betSlip.endsWith("HG")
+console.log(betSlipResult)
+
+
+//Logical operators
+//Logical AND (&&) - operator
+//Logical OR (||) - operator
+
+let userCity = "London"
+let userAge = 30
+
+if (userCity === "Uganda" &&  userAge >= 30){
+    console.log("Let them into the party")
+}else{
+    console.log("Tell them they are not allow into the party")
+}
+
+let userCountry = "Nigeria"
+let userTicketNumber = 70
+
+if (userCountry === "Uganda" || userTicketNumber >= 70){
+    console.log("Visa approved")
+}else{
+    console.log("Visa denied")
+}
+
+
+//Loops - loops are use mainly to fetch data out of an array one-by-one
+
+const myArray = [
+    "Sandra",
+    "John",
+    "Paul",
+    "Winifred",
+    "Seun",
+    "Ada",
+    "Zainab"
+]
+
+for(let x = 0; x < myArray.length; x++){
+    let extract = myArray[x]
+
+    console.log(extract)
+}
+
+//x = 0; = initializer
+//x < 7; or (myArray.length)= condition
+//x++ = increement
+
+//x - can be anything 
+
+
+const cities = [
+    "Accra",
+    "Lome",
+    "Uganda",
+    "Nairobi",
+    "Lagos"
+]
+
+for(let x =0; x < cities.length; x++){
+    let numberOfCities = cities[x]
+
+    console.log(numberOfCities)
+}
+
+
+const students = [
+    {
+        fullName : "David James",
+        studentId : 45564,
+        score : 56
+    },
+
+    {
+        fullName : "Andy Easy",
+        studentId : 34564,
+        score : 70
+    }, 
+
+    {
+        fullName : "James Sandra",
+        studentId : 4004,
+        score : 40
+    },
+
+    {
+        fullName : "Mary Moon",
+        studentId : 90235,
+        score : 90
+    }
+]
+
+for (let x = 0; x < students.length; x++){
+    let studentsRecord = students[x]
+
+
+    let studentsFullName = studentsRecord.fullName
+    let studentsScore = studentsRecord.score
+
+    if(studentsScore > 70){
+        console.log(`The student with the name ${studentsFullName} score the highest`)
+    }
+}
+
+
+//Nested for loops - it is use to put a loop inside a loop
+
+for(let x = 0; x < 5; x++){
+    console.log(`This is me trying nested loop`)
+
+    for(let z = 0; z < 10; z++){
+        console.log(`This is the child for loop`)
+    }
+}
